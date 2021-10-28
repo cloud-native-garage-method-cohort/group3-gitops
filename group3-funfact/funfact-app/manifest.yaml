@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   annotations:
-    app.openshift.io/vcs-ref: d9139040335bcc8461e11d031f9f3b2c17ff4c0a
+    app.openshift.io/vcs-ref: ef57eb6aea41f8e63fa8deea650fbd9fe6d8215a
     app.openshift.io/vcs-uri: https://github.com/cloud-native-garage-method-cohort/group-3-project-frontend.git
   labels:
     app.kubernetes.io/instance: funfact-app
@@ -24,7 +24,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   annotations:
-    app.openshift.io/vcs-ref: d9139040335bcc8461e11d031f9f3b2c17ff4c0a
+    app.openshift.io/vcs-ref: ef57eb6aea41f8e63fa8deea650fbd9fe6d8215a
     app.openshift.io/vcs-uri: https://github.com/cloud-native-garage-method-cohort/group-3-project-frontend.git
   labels:
     app.kubernetes.io/instance: funfact-app
@@ -42,7 +42,7 @@ spec:
   template:
     metadata:
       annotations:
-        app.openshift.io/vcs-ref: d9139040335bcc8461e11d031f9f3b2c17ff4c0a
+        app.openshift.io/vcs-ref: ef57eb6aea41f8e63fa8deea650fbd9fe6d8215a
         app.openshift.io/vcs-uri: https://github.com/cloud-native-garage-method-cohort/group-3-project-frontend.git
       labels:
         app.kubernetes.io/instance: funfact-app
@@ -54,7 +54,7 @@ spec:
         - name: PROTOCOLS
         - name: LOG_LEVEL
           value: debug
-        image: quay.io/ting_wu/funfact_repo:d9139040335bcc8461e11d031f9f3b2c17ff4c0a
+        image: quay.io/ting_wu/funfact_repo:ef57eb6aea41f8e63fa8deea650fbd9fe6d8215a
         imagePullPolicy: IfNotPresent
         livenessProbe:
           failureThreshold: 3
@@ -92,7 +92,7 @@ apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
   annotations:
-    app.openshift.io/vcs-ref: d9139040335bcc8461e11d031f9f3b2c17ff4c0a
+    app.openshift.io/vcs-ref: ef57eb6aea41f8e63fa8deea650fbd9fe6d8215a
     app.openshift.io/vcs-uri: https://github.com/cloud-native-garage-method-cohort/group-3-project-frontend.git
   labels:
     app.kubernetes.io/instance: funfact-app
